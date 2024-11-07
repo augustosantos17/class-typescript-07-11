@@ -1,11 +1,15 @@
-function movimentar(direcao: string, qtdPassos: number){
-    console.log(`O personagem andou ${qtdPassos} passos para ${direcao}`);
+type direcao ="cima" | "baixo" | "esquerda" | "direita"
+
+type movimento = {
+    direcao: direcao;
+    qtdPassos: number;
 
 }
 
-movimentar("cima", 2);
-movimentar("Cima", 4);
-movimentar("cimA", 6);
-movimentar("BAIXO", 2);
-movimentar("DireitA", 2);
-movimentar("abc", 2);
+function movimentar(move:movimento) {
+    console.log(`O personagem andou ${move.qtdPassos} passos para ${move.direcao}`);
+
+}
+
+movimentar({ direcao: "cima", qtdPassos: 2});
+
