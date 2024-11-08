@@ -1,10 +1,5 @@
 "use strict";
-function movimentar(direcao, qtdPassos) {
-    console.log(`O personagem andou ${qtdPassos} passos para ${direcao}`);
+function movimentar(move) {
+    console.log(`O personagem andou ${move.qtdPassos} passos para ${move.direcao}`);
 }
-movimentar("cima", 2);
-movimentar("Cima", 4);
-movimentar("cimA", 6);
-movimentar("BAIXO", 2);
-movimentar("DireitA", 2);
-movimentar("abc", 2);
+movimentar({ direcao: "cima", qtdPassos: 2 });

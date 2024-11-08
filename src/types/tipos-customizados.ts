@@ -1,4 +1,4 @@
-type direcao ="cima" | "baixo" | "esquerda" | "direita"
+
 
 type movimento = {
     direcao: direcao;
