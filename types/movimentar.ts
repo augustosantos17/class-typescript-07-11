@@ -1,0 +1,1 @@
+type direcao ="cima" | "baixo" | "esquerda" | "direita"
