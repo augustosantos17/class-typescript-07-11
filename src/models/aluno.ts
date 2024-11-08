@@ -1,6 +1,7 @@
 import {movimentar} from "../types/movimentar";
 
-class Aluno {
+
+class Aluno{
     nome: string;
     idade: number;
 
